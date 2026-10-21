@@ -84,3 +84,12 @@ language sql stable as $$
     order by 4 desc
     limit match_count;
 $$;
+
+-- Row Level Security ----------------------------------------------------
+-- Blocks direct access via anon/authenticated keys.
+-- The FastAPI backend uses the service_role key, which bypasses RLS.
+alter table projects      enable row level security;
+alter table chats         enable row level security;
+alter table messages      enable row level security;
+alter table summaries     enable row level security;
+alter table context_packs enable row level security;
