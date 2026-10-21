@@ -37,7 +37,7 @@ docs/       Architecture notes and assets
 
 ## Roadmap
 - [x] Phase 1: Database schema
-- [ ] Phase 2: Chat endpoint + message storage
+- [x] Phase 2: Chat endpoint + message storage
 - [ ] Phase 3: Embeddings + similarity search
 - [ ] Phase 4: Auto-summarization + Context Packs
 - [ ] Phase 5: Context injection
@@ -47,4 +47,4 @@ docs/       Architecture notes and assets
 ## Setup
 1. Copy `.env.example` to `.env` and fill in your keys.
 2. In Supabase SQL Editor, run `supabase/schema.sql`.
-3. Backend: see `backend/README.md` (coming in Phase 2).
+3. Backend: see `backend/README.md`.
